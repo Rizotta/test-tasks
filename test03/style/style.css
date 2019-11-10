@@ -23,7 +23,7 @@
     align-items: center;
 }
 
-header-top__left {
+.header-top__left {
     display: flex;
 }
 
@@ -299,11 +299,12 @@ header-top__left {
     background-color: #fff;
 }
 
-.header-mob__bottom .menu {
+.header-mob__bottom .menu-btn {
     background: url(../images/menu.png) center no-repeat;
     width: 30px;
     height: 45px;
 }
+
 
 .header-mob__bottom .logo {
     vertical-align: middle;
@@ -413,10 +414,6 @@ header-top__left {
 
 /*   --- Menu mobile --- */
 
-.menu-mob {
-    display: none;
-}
-
 .item-mob {
     list-style-type: none;
 }
@@ -452,14 +449,21 @@ header-top__left {
     color: #fff;
 }
 
-.main-item .close-menu {
-    background: url(../images/close-mob.png) 15px center no-repeat;
+.main-item .btn {
     width: 30px;
     height: 30px;
     display: inline-block;
     vertical-align: middle;
     margin-right: 19px;
     padding-left: 11px;
+}
+
+.main-item .close-menu {
+    background: url(../images/close-mob.png) 15px center no-repeat;
+}
+
+.main-item .previous-menu {
+    background: url(../images/arrow-left-mob.png) 15px center no-repeat;
 }
 
 .menu-more:after {
@@ -574,7 +578,7 @@ header-top__left {
     .menu {
         display: none;
     }
-    .menu-mob {
-        display: block;
+    nav {
+        display: none;
     }
 }
