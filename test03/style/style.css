@@ -1,0 +1,516 @@
+@import url("https://fonts.googleapis.com/css?family=PT+Sans+Caption|Secular+One&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.center {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.header-up {
+    border-bottom: 1px solid #D3D3D3;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    height: 45px;
+    font-family: "PT Sans Caption", sans-serif;
+    font-size: 13px;
+    line-height: 17px;
+    align-items: center;
+}
+
+header-top__left {
+    display: flex;
+}
+
+.header-top__left .location {
+    margin-right: 10px;
+}
+
+.header-top__left .city-select {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #141414;
+    cursor: pointer;
+}
+
+.header-top__left .city-select:hover {
+    color: #337FD2;
+}
+
+.header-top__left .city-select:before {
+    content: "";
+    display: inline-block;
+    height: 22px;
+    width: 24px;
+    margin-right: 10px;
+    background: url(../images/location.png) bottom right no-repeat;
+}
+
+.header-top__left .city-select:after {
+    content: "";
+    display: inline-block;
+    height: 9px;
+    width: 12px;
+    margin-left: 1px;
+    background: url(../images/arrow-down.png) bottom right no-repeat;
+}
+
+.header-top__center {
+    display: flex;
+    justify-content: space-around;
+    color: #141414;
+}
+
+.header-top__center-address {
+    margin-right: 30px;
+}
+
+.header-top__right {
+    display: flex;
+}
+
+.header-top__right .logo {
+    margin-right: 10px;
+}
+
+.header-top__right .lk {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    line-height: 19px;
+    font-weight: bold;
+    color: #337FD2;
+}
+
+.header-top__right .lk .dot {
+    border-bottom: 1.5px dotted #337FD2;
+}
+
+.header-top__right .lk .dot:hover {
+    border: 0;
+    padding-bottom: 1px;
+}
+
+.header-top__right .lk .dot:active {
+    outline: none;
+    border: 0;
+    padding-bottom: 1px;
+}
+
+.header-top__right .lk .dot:focus {
+    border: 0;
+    outline: none;
+    padding-bottom: 1px;
+}
+
+.header-top__right .lk .dot:focus-moz-focus-inner {
+    border: 0;
+    outline: none;
+}
+
+.header-top__right .lk:before {
+    content: "";
+    display: inline-block;
+    height: 22px;
+    width: 24px;
+    margin-right: 15px;
+    background: url(../images/lk.png) bottom right no-repeat;
+}
+
+.header-top__call {
+    display: none;
+}
+
+.header-middle {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    border-bottom: 1px solid #D3D3D3;
+    font-family: "PT Sans Caption", sans-serif;
+    font-size: 13px;
+    line-height: 17px;
+    align-items: center;
+}
+
+.header-middle__logo-name {
+    float: left;
+    margin-right: 15px;
+    font-family: "Secular One", sans-serif;
+    font-size: 34px;
+    line-height: 49px;
+    align-items: center;
+    color: #313D50;
+    text-decoration: none;
+}
+
+.header-middle__logo-slogan {
+    float: right;
+    width: 109px;
+    font-family: "PT Sans Caption", sans-serif;
+    font-size: 13px;
+    line-height: 17px;
+    color: #3B3B3B;
+}
+
+.header-middle__call .phone-logo, .header-top__call .phone-logo {
+    float: left;
+    margin-right: 15px;
+    padding-top: 10px;
+}
+
+.header-middle__call-right {
+    float: right;
+}
+
+.header-middle__call-right .phone, .header-top__call .phone {
+    font-family: "PT Sans Caption", sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 27px;
+    color: #3B3B3B;
+}
+
+.header-middle__call-right .call-me {
+    font-family: "PT Sans Caption", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 22px;
+    text-align: center;
+    color: #337FD2;
+    text-decoration: none;
+    border-bottom: 1.5px dotted #337FD2;
+}
+
+.header-middle__call-right .call-me:hover {
+    border: none;
+    padding-bottom: 1px;
+}
+
+.header-middle__search .search {
+    border: 1px solid #D6D6D6;
+    border-radius: 53px;
+    width: 430px;
+    height: 43px;
+    padding: 0 18px 0 22px;
+}
+
+.header-middle__search .search-input {
+    float: left;
+    border: 0;
+    font-family: "PT Sans Caption", sans-serif;
+    font-size: 13px;
+    line-height: 43px;
+    color: #4B4B4B;
+    width: 90%;
+    outline: none;
+}
+
+.header-middle__search .search-logo {
+    float: right;
+    cursor: pointer;
+    margin-top: 11px;
+}
+
+.header-middle__basket .basket {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.header-middle__basket .basket-logo {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.header-middle__basket .basket-positions, .header-mob__bottom .positions {
+    display: inline-block;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: #E65555;
+    vertical-align: middle;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.header-middle__basket .basket-positions-count, .header-mob__bottom .count {
+    font-family: "PT Sans Caption", sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 30px;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    vertical-align: middle;
+}
+
+.header-middle__basket .basket-price, .header-mob__bottom .price {
+    font-family: "PT Sans Caption", sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    color: #3B3B3B;
+    vertical-align: middle;
+}
+
+.header-middle__basket .basket:hover .basket-positions {
+    background-color: #df2929;
+}
+
+.header-mob {
+    display: none;
+}
+.header-mob__top {
+    height: 54px;
+    border-bottom: 1px solid #D3D3D3;
+}
+
+.header-mob__top .name-logo {
+    float: left;
+    font-family: "Secular One", sans-serif;
+    font-size: 24px;
+    line-height: 54px;
+    color: #313D50;
+}
+
+.header-mob__top .phone {
+    float: right;
+    line-height: 54px;
+    font-family: "PT Sans Caption", sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    color: #3B3B3B;
+}
+
+.header-mob__bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-mob__bottom .btn {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.header-mob__bottom .menu {
+    background: url(../images/menu.png) center no-repeat;
+    width: 30px;
+    height: 45px;
+}
+
+.header-mob__bottom .logo {
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.header-mob__bottom .price {
+    font-weight: bold;
+}
+
+.header-mob__bottom .search {
+    background: url(../images/search-mob.png) center no-repeat;
+    width: 30px;
+    height: 45px;
+}
+
+/* --- Menu --- */
+
+.nav {
+    height: 50px;
+    background-color: #313D50;
+    margin: 0 auto;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu .item {
+    padding-left: 25px;
+    padding-right: 25px;
+    height: 50px;
+    line-height: 50px;
+    list-style-type: none;
+    text-align: center;
+    position: relative;
+}
+
+.menu .main-item {
+    background: #0B6EDB;
+}
+
+.menu .main-item a:hover {
+    color: #fff;
+}
+
+.menu .main-item__logo {
+    margin-right: 20px;
+    margin-top: -2px;
+    vertical-align: middle;
+}
+
+.menu a {
+    display: block;
+    float: right;
+    text-decoration: none;
+    font-family: "PT Sans Caption", sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 50px;
+    color: #fff;
+    transition: all 0.1s ease;
+}
+
+.menu a:hover {
+    color: #337FD2;
+}
+
+.menu .item:hover .submenu {
+    display: block;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    min-width: 280px;
+    top: 50px;
+    left: 0;
+    background: #F9F9F9;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+}
+
+.submenu .sub-item {
+    list-style-type: none;
+    border-bottom: 1px solid #DADADA;
+    height: 45px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.submenu .sub-item:last-child {
+    border-bottom: none;
+}
+
+.submenu .sub-item a {
+    color: black;
+    text-transform: none;
+    min-width: 100%;
+    text-align: left;
+    line-height: 45px;
+}
+
+.submenu .sub-item a:hover {
+    color: #337FD2;
+}
+
+
+@media screen and (max-width: 1280px) {
+    .center {
+        max-width: 1024px;
+    }
+    .header-top__left, .header-top__center {
+        font-size: 12px;
+    }
+    .header-top__center-address {
+        margin-right: 20px;
+    }
+    .header-top__left .city-select:after {
+        margin-left: 12px;
+    }
+    .header-top__left .city-select:before {
+        margin-right: 6px;
+    }
+    .header-top__right .lk:before {
+        margin-right: 10px;
+    }
+    .header-middle__search .search {
+        width: 260px;
+    }
+    .menu {
+        width: 1024px;
+    }
+    .menu a {
+        font-size: 13px;
+    }
+    .menu .item {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .menu .main-item__logo {
+        margin-right: 15px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .center {
+        max-width: 768px;
+    }
+    .header-top__left {
+        font-size: 13px;
+    }
+    .header-top__center {
+        font-size: 14px;
+    }
+    .header-top__center-address {
+        display: none;
+    }
+    .header-top__center-hour {
+        display: none;
+    }
+    .call-me {
+        display: none;
+    }
+    .header-top__call {
+        display: block;
+    }
+    .header-top__call .phone {
+        float: right;
+        line-height: 45px;
+    }
+    .header-middle__logo-name {
+        font-size: 29px;
+    }
+    .header-middle__call .phone-logo {
+        display: none;
+    }
+    .header-middle__call-right {
+        display: none;
+    }
+    .menu .main-item:before {
+        content: "";
+    }
+    .menu .main-item__logo {
+        display: none;
+    }
+    .menu .item-stealthy {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .center {
+        max-width: 320px;
+        padding-left: 10px;
+        padding-right: 20px;
+    }
+    .header-up {
+        display: none;
+    }
+    .header-middle {
+        display: none;
+    }
+    .header-mob {
+        display: block;
+    }
+    nav {
+        display: none;
+    }
+}
