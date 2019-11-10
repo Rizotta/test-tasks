@@ -60,7 +60,7 @@
                 </a>
             </div>
         </div>
-        <section class="header-mob">
+        <section class="header-mob" id="header-mob">
             <div class="header-mob__top">
                 <div class="center">
                     <span class="name-logo">Commerce</span>
@@ -69,7 +69,7 @@
                 
             </div>
             <div class="header-mob__bottom center">
-                <button class="btn menu-btn"></button>
+                <button class="btn menu-btn" id="open-menu"></button>
                 <button class="btn busket">
                     <img class="logo" src="images/basket-mob.png" alt="busket-mob">
                     <span class="positions"><span class="count">0</span></span>
@@ -80,7 +80,7 @@
         </section>
     </header>
 
-    <nav class="nav">
+    <nav class="nav" id="nav">
         <ul class="menu center">
             <li class="item main-item">
                 <img class="main-item__logo" src="images/stroke.png" alt="catalog logo">
@@ -106,18 +106,18 @@
     </nav>
     <section class="main-menu-mob center">
         <ul>
-            <li class="item-mob main-item"><a class="btn close-menu" href="#"></a>Меню</li>
-            <li class="item-mob menu-more"><a class="item-link" href="#">Тележки для склада</a></li>
-            <li class="item-mob menu-more"><a class="item-link" href="#">Колеса, олесные опоры</a></li>
-            <li class="item-mob"><a class="item-link" href="#">Складская техника</a></li>
-            <li class="item-mob menu-more"><a class="item-link" href="#">Металлические поддоны</a></li>
-            <li class="item-mob menu-more"><a class="item-link" href="#">Стеллажи и тележки для воды</a></li>
-            <li class="item-mob menu-more"><a class="item-link" href="#">Сетчатые контейнеры</a></li>
-            <li class="item-mob"><a class="item-link" href="#">Лестницы</a></li>
+            <li class="item-mob main-item"><a id="close-menu" class="btn close-menu" href="#"></a>Меню</li>
+            <li class="item-mob menu-more" id="parent-1"><a class="item-link" href="#">Тележки для склада</a></li>
+            <li class="item-mob menu-more" id="parent-2"><a class="item-link" href="#">Колеса, олесные опоры</a></li>
+            <li class="item-mob" id="parent-3"><a class="item-link" href="#">Складская техника</a></li>
+            <li class="item-mob menu-more" id="parent-4"><a class="item-link" href="#">Металлические поддоны</a></li>
+            <li class="item-mob menu-more" id="parent-5"><a class="item-link" href="#">Стеллажи и тележки для воды</a></li>
+            <li class="item-mob menu-more" id="parent-6"><a class="item-link" href="#">Сетчатые контейнеры</a></li>
+            <li class="item-mob" id="parent-7"><a class="item-link" href="#">Лестницы</a></li>
         </ul>
     </section>
 
-    <section class="second-menu-mob center">
+    <section id="sub-1"class="second-menu-mob center">
         <ul>
             <li class="item-mob main-item"><a class="btn previous-menu" href="#"></a>Сумки и рюкзаки</li>
             <li class="item-mob"><a class="item-link" href="#">Для ручной клади</a></li>
@@ -129,5 +129,8 @@
             <li class="item-mob"><a class="item-link" href="#">Категория 2</a></li>
         </ul>
     </section>
+
+    <script type="text/javascript"  src="https://yastatic.net/jquery/3.1.0/jquery.min.js"></script> 
+    <script type="text/javascript"  src="script/main.js"></script> 
 </body>
 </html>
