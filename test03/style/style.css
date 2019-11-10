@@ -411,6 +411,67 @@ header-top__left {
     color: #337FD2;
 }
 
+/*   --- Menu mobile --- */
+
+.menu-mob {
+    display: none;
+}
+
+.item-mob {
+    list-style-type: none;
+}
+
+.item-mob {
+    height: 50px; 
+}
+
+.item-mob .item-link {
+    text-decoration: none;
+    font-family: "PT Sans Caption", sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 50px;
+    color: #39393A;
+    display: block;
+    padding-left: 11px;
+    padding-right: 11px;
+    border-bottom: 1px solid #DEDEDE;
+}
+
+.item-mob .item-link:hover {
+    background-color: #D9D9D9;
+}
+
+.main-item {
+    background: #337FD2;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.16);
+    font-family: "PT Sans Caption", sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 50px;
+    color: #fff;
+}
+
+.main-item .close-menu {
+    background: url(../images/close-mob.png) 15px center no-repeat;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 19px;
+    padding-left: 11px;
+}
+
+.menu-more:after {
+    content: "";
+    float: right;
+    display: inline-block;
+    height: 50px;
+    width: 12px;
+    margin-right: 11px;
+    background: url(../images/arrow-right-mob.png) center no-repeat;
+}
+
 
 @media screen and (max-width: 1280px) {
     .center {
@@ -510,7 +571,10 @@ header-top__left {
     .header-mob {
         display: block;
     }
-    nav {
+    .menu {
         display: none;
+    }
+    .menu-mob {
+        display: block;
     }
 }
