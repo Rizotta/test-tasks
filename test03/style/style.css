@@ -476,6 +476,9 @@
     background: url(../images/arrow-right-mob.png) center no-repeat;
 }
 
+.main-menu-mob, .second-menu-mob {
+    display: none;
+}
 
 @media screen and (max-width: 1280px) {
     .center {
@@ -580,5 +583,8 @@
     }
     nav {
         display: none;
+    }
+    .main-menu-mob, .second-menu-mob {
+        display: block;
     }
 }
